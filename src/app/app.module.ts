@@ -7,6 +7,7 @@ import { SideNavComponent } from './Components/side-nav/side-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchpComponent } from './Components/searchp/searchp.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { ProductsComponent } from './Components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FooterComponent } from './Components/footer/footer.component';
     SideNavComponent,
     SearchpComponent,
     FooterComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
