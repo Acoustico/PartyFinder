@@ -6,6 +6,7 @@ import { HeaderComponent } from './Components/header/header.component';
 import { SideNavComponent } from './Components/side-nav/side-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchpComponent } from './Components/searchp/searchp.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { SearchpComponent } from './Components/searchp/searchp.component';
     HeaderComponent,
     SideNavComponent,
     SearchpComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
