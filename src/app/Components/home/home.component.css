@@ -1,3 +1,10 @@
+h1{
+    text-align: center;
+}
+.input-field{
+    align-content: center;
+}
+
 .bgimg {
     display:block;
     margin: 0;
