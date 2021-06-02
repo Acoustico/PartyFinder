@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+.input-field{
+    align-content: center;
+}
+
+.bgimg {
+    display:block;
+    margin: 0;
+    padding: 0;
+    background: url('../../../assets/original-1.png');
+  }
