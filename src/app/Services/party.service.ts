@@ -1,6 +1,6 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 import {HttpClient} from'@angular/common/http';
-import {Party} from '../../models/partys.js'
+import {Party} from '../Model/party'
 
 @Injectable({
     providedIn: 'root'

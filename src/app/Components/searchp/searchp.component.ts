@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PartyService} from '../../Services/party.service';
 
 @Component({
   selector: 'app-searchp',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchpComponent implements OnInit {
 
-  constructor() { }
+  constructor(public partyService: PartyService) { }
 
   ngOnInit(): void {
+    console.log(this.partyService.getPartys());
+    this.getPartys();
   }
 
+  getPartys(){
+    this.partyService.getPartys().subscribe(
+      res =>{
+        this.partyService.partys = res;
+        console.log(res);
+      },
+      err => {
+        console.log(err);
+      }
+    )
+  }
 }
