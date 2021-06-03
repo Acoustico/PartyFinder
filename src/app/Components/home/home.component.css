@@ -9,5 +9,12 @@ h1{
     display:block;
     margin: 0;
     padding: 0;
-    background: url('../../../assets/original-1.png');
+    margin: -10px;
   }
+
+  .iris {
+    background-image: url('../../../assets/original-1.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
