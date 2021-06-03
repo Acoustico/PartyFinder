@@ -9,6 +9,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { ProductsComponent } from './Components/products/products.component';
 import { HomeComponent } from './Components/home/home.component';
 import { createPComponent } from './Components/createP/createP.component';
+import { PartyComponent } from './Components/party/party.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { createPComponent } from './Components/createP/createP.component';
     ProductsComponent,
     HomeComponent,
     createPComponent,
+    PartyComponent,
   ],
   imports: [
     BrowserModule,
