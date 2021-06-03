@@ -6,13 +6,9 @@ import { SideNavComponent } from './Components/side-nav/side-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchpComponent } from './Components/searchp/searchp.component';
 import { FooterComponent } from './Components/footer/footer.component';
-<<<<<<< HEAD
-import { createPComponent } from './Components/createP/createP.component';
-=======
 import { ProductsComponent } from './Components/products/products.component';
 import { HomeComponent } from './Components/home/home.component';
-import { CreatepComponent } from './Components/createp/createp.component';
->>>>>>> 9245eb0873c04504f1abf10cd996036cfdf07b80
+import { createPComponent } from './Components/createP/createP.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +19,7 @@ import { CreatepComponent } from './Components/createp/createp.component';
     FooterComponent,
     ProductsComponent,
     HomeComponent,
-    CreatepComponent,
+    createPComponent,
   ],
   imports: [
     BrowserModule,
