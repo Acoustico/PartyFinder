@@ -1,4 +1,92 @@
-div{
-    padding-left: 10px;
+
+::placeholder{
+    color:gray;
+    opacity: 1;
+  }
+  .gwd-input-1gzn {
+    position: absolute;
+    left: 12%;
+    top: 12%;
+    width: 1%;
+    max-width: fit-content;
+    height: 3%;
+    
+  }
+  .gwd-input-f7xz {
+    position: absolute;
+    left: 12%;
+    top: 10%;
+    max-width: fit-content;
+    width: 100px;
+    height: 20px;
+  }
+  .gwd-input-4xps {
+    left: 543px;
+    top: 227px;
+  }
+  .gwd-button-1q6f {
+    position: absolute;
+    width: 5%;
+    height: 3%;
+    left: 13%;
+    top: 44.5%;
+    background-color: green;
+  }
+  .gwd-button-1dnm {
+    position: absolute;
+    width: 5%;
+    height: 3%;
+    left: 22%;
+    top: 44.5%;
+    background-color: rgb(190, 80, 80);
+  }
+  .gwd-input-1onz {
+    left: 246px;
+    top: 231px;
+  }
+  .gwd-input-cipp {
+    position: absolute;
+    left: 12.7%;
+    max-width: fit-content;
+    top: 37%;
+    height: 3%;
+    width: 3%;
+  }
+  .gwd-rect-1jkp {
+    position: absolute;
+    width: 26%;
+    height: 40%;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    left: 9%;
+    background-image: none;
+    background-color: rgba(41, 40, 77, 0.651);
+    top: 10%;
+
+  }
+  .gwd-input-1lwz {
+    top: 295px;
+    width: 200px;
+  }
+  .gwd-input-fjdx {
+    top: 232px;
+    width: 200px;
+  }
+  .t1{
+    position: absolute;
+    top: 200px;
+    width:300px;
+    height: 100px;
+  }
+  .big{
+    position: absolute;  
     background-color: #2E5C81;
-}
+      width: 100%;
+      height: 76.5%;
+
+      
+
+  }
+  
