@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Party} from 'src/app/Model/crearparty';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-createP',
@@ -7,10 +8,15 @@ import {Party} from 'src/app/Model/crearparty';
   styleUrls: ['./createP.component.css']
 })
 export class createPComponent implements OnInit {
-  party:Party | undefined
-  constructor() { }
+  party:Party={}
+  constructor() {
+    this.party=new Party();
+   }
 
   ngOnInit(): void {
   }
 
+  createparty(form:NgForm){
+
+  }
 }
