@@ -1,4 +1,4 @@
-export class Party{
+export class CParty{
     title?: String
     language?: String
     game?: String

@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule} from '@angular/forms';
+import { PartyService } from './Services/party.service';
 import { AppRoutingModule } from './app-routing.module';
+import { Party } from './Model/party';
 import { AppComponent } from './app.component';
 import { SideNavComponent } from './Components/side-nav/side-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -32,7 +34,7 @@ import { PartyComponent } from './Components/party/party.component';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [PartyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

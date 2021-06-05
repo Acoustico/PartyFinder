@@ -4,11 +4,10 @@
     <div class="col s10">
         <form class="row s10" #searchForm="ngForm" (ngSubmit)="searchbox(searchForm)">
             <div class="col offset-s5">
-                
-                <div class="input-field col s4 offset-s1">
+                <div class="input-field col s8 ">
                     <input id="icon_prefix2" type="text" class="validate" name="sGame" [(ngModel)]="sGame">
                     <label for="icon_prefix2">Game</label>
-                    <button type="submit" ><i class="material-icons prefix">search</i></button>
+                    <button type="submit" class="button" ><i class="material-icons prefix">search</i></button>
                 </div>
             </div>
         </form>

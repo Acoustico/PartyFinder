@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,12 +11,13 @@ import {NgForm} from '@angular/forms';
 export class HomeComponent implements OnInit {
   sGame='';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
   searchbox(form: NgForm){
+    this.router.navigateByUrl('searchp');
     console.log(form.value);
   }
 }

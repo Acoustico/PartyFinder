@@ -4,6 +4,12 @@ h1{
 .input-field{
     align-content: center;
 }
+.button{
+    position: right;
+    margin-left: 250px;
+    background-color:transparent;
+    border: transparent;
+}
 
 .bgimg {
     display:block;
