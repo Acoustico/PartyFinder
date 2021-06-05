@@ -2,27 +2,32 @@
 <head>
   <style type="text/css">
     html, body {
+      background-color: #2E5C81;
       width: 20%;
       height: 100%;
       margin: 0px;
     }
     body {
-      background-color: transparent;
-      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-      transform-style: preserve-3d;
+      background-color: #2E5C81;
+    }
+    ::placeholder{
+      color:gray;
+      opacity: 1;
     }
     .gwd-input-1gzn {
       position: absolute;
-      left: 60%;
-      right: 30%;
-      top: 120px;
-      width: 100px;
+      left: 12%;
+      top: 12%;
+      width: 1%;
+      max-width: fit-content;
       height: 3%;
+      
     }
     .gwd-input-f7xz {
       position: absolute;
       left: 12%;
-      top: 26%;
+      top: 10%;
+      max-width: fit-content;
       width: 100px;
       height: 20px;
     }
@@ -38,7 +43,7 @@
       top: 446px;
     }
     .gwd-button-1dnm {
-      position: relative;
+      position: absolute;
       width: 100px;
       height: 24px;
       left: 449px;
@@ -50,23 +55,25 @@
     }
     .gwd-input-cipp {
       position: absolute;
-      left: 246px;
-      top: 358px;
-      height: 20px;
-      width: 100px;
+      left: 12.7%;
+      max-width: fit-content;
+      top: 37%;
+      height: 3%;
+      width: 3%;
     }
     .gwd-rect-1jkp {
       position: absolute;
-      width: 554px;
-      height: 464px;
+      width: 26%;
+      height: 50%;
       box-sizing: border-box;
       border-width: 1px;
       border-style: solid;
       border-color: rgb(0, 0, 0);
-      left: 172px;
+      left: 9%;
       background-image: none;
       background-color: rgba(208, 231, 210, 0.651);
-      top: 113px;
+      top: 10%;
+
     }
     .gwd-input-1lwz {
       top: 295px;
@@ -85,7 +92,7 @@
   </style>
 </head>
 
-<body class="htmlNoPages">
+<body class="htmlNoPages" style="background-color:#2E5C81">
 
   <svg data-gwd-shape="rectangle" class="gwd-rect-1jkp"></svg>
   <input type="text" id="text_1"  class="gwd-input-1gzn" placeholder="Title">
@@ -93,6 +100,6 @@
   <input type="text" id="text_6" class="gwd-input-f7xz gwd-input-4xps gwd-input-1onz gwd-input-1lwz" placeholder="Language">
   <button id="button_1" class="gwd-button-1q6f">Post</button>
   <button id="button_2" class="gwd-button-1dnm">Cancel</button>
-  <input type="text" id="text_5" class="gwd-input-cipp" placeholder="# Players">
+  <input type="number" id="text_5" class="gwd-input-cipp" placeholder="# Players">
 </body>
 
