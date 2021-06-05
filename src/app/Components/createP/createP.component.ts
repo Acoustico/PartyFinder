@@ -17,6 +17,6 @@ export class createPComponent implements OnInit {
   }
 
   createparty(form:NgForm){
-
+    console.log(form.value);
   }
 }
