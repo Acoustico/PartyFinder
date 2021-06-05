@@ -10,6 +10,7 @@
     width: 1%;
     max-width: fit-content;
     height: 3%;
+    color: white;
     
   }
   .gwd-input-f7xz {
@@ -17,12 +18,13 @@
     left: 12%;
     top: 10%;
     max-width: fit-content;
-    width: 100px;
-    height: 20px;
+    width: 3%;
+    height: 3%;
+    color: white;
   }
   .gwd-input-4xps {
-    left: 543px;
-    top: 227px;
+    left: 20%;
+    top: 30%;
   }
   .gwd-button-1q6f {
     position: absolute;
@@ -41,8 +43,8 @@
     background-color: rgb(190, 80, 80);
   }
   .gwd-input-1onz {
-    left: 246px;
-    top: 231px;
+    left: 12.6%;
+    top: 30%;
   }
   .gwd-input-cipp {
     position: absolute;
@@ -51,6 +53,7 @@
     top: 37%;
     height: 3%;
     width: 3%;
+    color: white;
   }
   .gwd-rect-1jkp {
     position: absolute;
@@ -67,18 +70,12 @@
 
   }
   .gwd-input-1lwz {
-    top: 295px;
-    width: 200px;
+    top: 29.5%;
+    width: 3%;
   }
   .gwd-input-fjdx {
-    top: 232px;
-    width: 200px;
-  }
-  .t1{
-    position: absolute;
-    top: 200px;
-    width:300px;
-    height: 100px;
+    top: 23%;
+    width: 3%;
   }
   .big{
     position: absolute;  
