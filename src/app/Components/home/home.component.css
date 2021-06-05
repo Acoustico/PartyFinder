@@ -18,3 +18,7 @@ h1{
     height: 100vh;
     background-size: cover;
 }
+
+.input-field label {
+    color: #000;
+  }
