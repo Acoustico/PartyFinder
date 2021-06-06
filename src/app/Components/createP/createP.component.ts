@@ -11,7 +11,7 @@ import { stringify } from '@angular/compiler/src/util';
 })
 export class createPComponent implements OnInit {
   @Input() data:any;
-  party:Party[] | undefined;
+  party:CrearParty;
   /*Party:CreateParty | undefined
   party:Party | undefined
   ={ title: new String,
@@ -20,7 +20,7 @@ export class createPComponent implements OnInit {
     info: new String }*/
   
   constructor(public partyService: PartyService) {
-    //this.Party=new CreateParty();
+    this.party={};
    }
 
   ngOnInit(): void {
@@ -33,16 +33,15 @@ export class createPComponent implements OnInit {
 */
   addParty(title:string,game:string,language:string,info:string){
     const contenido: string[]=[];
-    const party=[];
-    party.push(title)
-    party.push(game)
-    party.push(language)
-    party.push(info)
-    console.log(party);
-    //stringify(party);
+    this.party.title=title;
+    this.party.game=game;
+    this.party.language=language;
+    this.party.info=info;
+    console.log(this.party);
+    //console.log(stringify(this.party))
     //this.partyService.addParty(stringify(party));
     //this.party=contenido;
-    //this.partyService.addParty(this.party);
+    this.partyService.addParty(this.party);
   }
   
 }

@@ -1,6 +1,6 @@
 export class CrearParty{
     title?:string;
-    game?:string;
     language?:string;
+    game?:string;
     info?:string;
 }
