@@ -12,12 +12,12 @@ export class PartyService{
     API_URL= "http://localhost:3000/api/party";
     partys: Party[] | undefined;
     party: CParty[] | undefined;
-    constructor(private http: HttpClient){
-      this.party=[];
-    }
+    constructor(private http: HttpClient){}
+      
+    
 
-    getPartys(): Observable<Party[]>{
-        return this.http.get<Party[]>(this.API_URL);
+    getPartys(){
+        return this.http.get<Party[]> (this.API_URL);
     }
 
     addToMongo(party:Party): Observable<Party>{

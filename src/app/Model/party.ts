@@ -1,7 +1,7 @@
 export interface Party{
-    title: String
-    language: String
-    game: String
-    info: String
+    title: string
+    language: string
+    game: string
+    info: string
 }
 
