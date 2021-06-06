@@ -10,7 +10,7 @@ import { PartyService } from 'src/app/Services/party.service';
 })
 export class PartyComponent implements OnInit {
   @Input() data:any;
-  constructor(private partyService: PartyService) { }
+  constructor(public partyService: PartyService) { }
 
   ngOnInit(): void {
     this.getPartys();
