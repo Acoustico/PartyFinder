@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {PartyService} from '../../Services/party.service';
 import {NgForm} from '@angular/forms';
+import { Party } from 'src/app/Model/party';
 
 @Component({
   selector: 'app-searchp',
@@ -24,14 +25,15 @@ export class SearchpComponent implements OnInit {
   }
 
   getPartys(){
-    this.partyService.getPartys().subscribe(
-      res =>{
+    this.partyService.getPartys()
+    /*.subscribe(
+      (      res: Party[] | undefined) =>{
         this.partyService.partys = res;
         console.log(res);
       },
-      err => {
+      (      err: any) => {
         console.log(err);
       }
-    )
+    )*/
   }
 }

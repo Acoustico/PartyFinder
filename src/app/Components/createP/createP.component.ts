@@ -12,13 +12,7 @@ import { stringify } from '@angular/compiler/src/util';
 export class createPComponent implements OnInit {
   @Input() data:any;
   party:CrearParty;
-  /*Party:CreateParty | undefined
-  party:Party | undefined
-  ={ title: new String,
-    language: new String,
-    game: new String,
-    info: new String }*/
-  
+    
   constructor(public partyService: PartyService) {
     this.party={};
    }
@@ -26,11 +20,6 @@ export class createPComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  /*createparty(form:NgForm){
-    //console.log(form.value);
-    this.partyService.addToMongo(this.party);
-  }
-*/
   addParty(title:string,game:string,language:string,info:string){
     const contenido: string[]=[];
     this.party.title=title;
@@ -38,9 +27,6 @@ export class createPComponent implements OnInit {
     this.party.language=language;
     this.party.info=info;
     console.log(this.party);
-    //console.log(stringify(this.party))
-    //this.partyService.addParty(stringify(party));
-    //this.party=contenido;
     this.partyService.addParty(this.party);
   }
   

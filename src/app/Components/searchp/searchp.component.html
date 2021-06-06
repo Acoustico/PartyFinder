@@ -38,6 +38,7 @@
     </div>
 
     <app-party *ngFor="let party of partyService.partys" [data]="party"></app-party>
+    <app-party *ngFor="let party of partyService.getPartys()" [data]="party"></app-party>
 
    <!-- <div id="modal1" class="modal">
         <div class="modal-content">
