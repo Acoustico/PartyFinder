@@ -28,3 +28,7 @@ h1{
 .input-field label {
     color: #000;
   }
+
+  .card-title{
+    font-weight: bold;
+}

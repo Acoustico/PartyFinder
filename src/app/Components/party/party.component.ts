@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as M from 'materialize-css';
+import { PartyService } from 'src/app/Services/party.service';
 
 
 @Component({
@@ -9,13 +10,23 @@ import * as M from 'materialize-css';
 })
 export class PartyComponent implements OnInit {
   @Input() data:any;
-  constructor() { }
+  constructor(public partyService: PartyService) { }
 
   ngOnInit(): void {
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.modal');
-      var instances = M.Modal.init(elems);
-    });
+   // this.getPartys();
+    this.partyService.getPartys();
   }
+  /*getPartys(){
+    this.partyService.getPartys().subscribe(
+      res=> {
+        this.partyService.partys=res;
+        console.log(this.partyService.partys);
+      },
+      err =>{
+        console.log(err);
+      }
+    )
+  }*/
+  
 
 }

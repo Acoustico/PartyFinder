@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from'@angular/common/http';
 import {Party} from '../Model/party'
-import {CParty} from '../Model/crearparty';
 import { Observable } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
@@ -11,19 +10,19 @@ import { catchError, retry } from 'rxjs/operators';
 export class PartyService{
     API_URL= "http://localhost:3000/api/party";
     partys: Party[] | undefined;
-    party: CParty[] | undefined;
+    crear_party: Party[] | undefined;
     constructor(private http: HttpClient){
-      this.party=[];
+      this.crear_party=[]
+    }
+      
+    getPartys(){
+        return this.http.get<Party[]> (this.API_URL);
     }
 
-    getPartys(): Observable<Party[]>{
-        return this.http.get<Party[]>(this.API_URL);
-    }
-
-    addToMongo(party:Party): Observable<Party>{
-      //this.party?.push(party);
-      console.log(party);
-      return this.http.post<Party>(this.API_URL, party);
+    addParty(item:Party){
+      this.crear_party?.push(item);
+      localStorage.setItem('crear',JSON.stringify(this.crear_party));
+      console.log(this.crear_party);
       
     }
     
