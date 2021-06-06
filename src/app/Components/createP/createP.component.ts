@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import {CParty} from 'src/app/Model/crearparty';
 import {NgForm} from '@angular/forms';
 import { PartyService } from '../../Services/party.service';
@@ -10,15 +10,17 @@ import { Party } from '../../Model/party';
   styleUrls: ['./createP.component.css']
 })
 export class createPComponent implements OnInit {
-  
+  @Input() data:any;
   constructor(public partyService: PartyService) {
     
    }
 
   ngOnInit(): void {
-  
+    this.partyService.getPartys();
   }
-
+  addParty(){
+    this.partyService.addToMongo(this.data)
+  }
   
 
  

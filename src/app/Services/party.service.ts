@@ -11,8 +11,10 @@ import { catchError, retry } from 'rxjs/operators';
 export class PartyService{
     API_URL= "http://localhost:3000/api/party";
     partys: Party[] | undefined;
-    party: CParty[] | undefined;
-    constructor(private http: HttpClient){}
+    crear_party: Party[] | undefined;
+    constructor(private http: HttpClient){
+      this.crear_party=[]
+    }
       
     
 
@@ -20,10 +22,11 @@ export class PartyService{
         return this.http.get<Party[]> (this.API_URL);
     }
 
-    addToMongo(party:Party): Observable<Party>{
-      //this.party?.push(party);
-      console.log(party);
-      return this.http.post<Party>(this.API_URL, party);
+    addToMongo(item:Party){
+      this.crear_party?.push(item);
+      localStorage.setItem('crear',JSON.stringify(this.crear_party));
+      console.log(this.crear_party);
+      
       
     }
     
