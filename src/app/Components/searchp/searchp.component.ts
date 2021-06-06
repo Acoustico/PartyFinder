@@ -14,8 +14,9 @@ export class SearchpComponent implements OnInit {
   constructor(public partyService: PartyService) { }
 
   ngOnInit(): void {
-    console.log(this.partyService.getPartys());
+    //console.log(this.partyService.getPartys());
     this.getPartys();
+
   }
 
   searchbox(form: NgForm){

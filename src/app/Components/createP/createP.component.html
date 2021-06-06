@@ -5,14 +5,18 @@
   <svg data-gwd-shape="rectangle" class="big"></svg>
   <svg data-gwd-shape="rectangle" class="gwd-rect-1jkp"></svg>
 
-  <form #createForm="ngForm" (ngSubmit)="createparty(createForm)">
-    <input type="text" id="text_1" class="gwd-input-1gzn" placeholder="Title" name="title" [(ngModel)]="data.title">
-    <input type="text" id="text_3" class="gwd-input-f7xz gwd-input-4xps gwd-input-1onz gwd-input-fjdx" placeholder="Game" name="game" [(ngModel)]="party.game">
-    <input type="text" id="text_6" class="gwd-input-f7xz gwd-input-4xps gwd-input-1onz gwd-input-1lwz" placeholder="Language" name="language" [(ngModel)]="party.language">
-    <button id="button_1" class="gwd-button-1q6f" [(ngModel)]="party" (click)="addParty(party)">Post</button>
+  <form #createForm="ngForm" >
+    <input type="text" id="text_1" class="gwd-input-1gzn" placeholder="Title" #title>
+    <input type="text" id="text_3" class="gwd-input-f7xz gwd-input-4xps gwd-input-1onz gwd-input-fjdx" placeholder="Game" #game>
+    <input type="text" id="text_6" class="gwd-input-f7xz gwd-input-4xps gwd-input-1onz gwd-input-1lwz" placeholder="Language" #language>
+    <input type="text" id="text_5" class="gwd-input-cipp" placeholder="Extra info" #info>
+    <button id="button_1" class="gwd-button-1q6f" (click)="addParty(title.value, game.value, language.value, info.value)" >Post</button>
     <!--<button id="button_2" class="gwd-button-1dnm">Cancel</button>-->
-    <input type="text" id="text_5" class="gwd-input-cipp" placeholder="Extra info" name="info" [(ngModel)]="data.info">
+    
   </form>
-
+  <!--para el form: (ngSubmit)="createparty(createForm)"
+      para los inputs: name="title" [(ngModel)]="party.title"
+      para el boton: [(ngModel)]="party" (click)="addParty(party)"
+  -->
 
 </body>

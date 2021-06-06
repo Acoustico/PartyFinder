@@ -1,6 +1,6 @@
-export class CParty{
-    title?: String
-    language?: String
-    game?: String
-    info?: String
+export class CrearParty{
+    title?:string;
+    game?:string;
+    language?:string;
+    info?:string;
 }

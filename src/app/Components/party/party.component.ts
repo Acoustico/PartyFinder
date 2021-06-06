@@ -13,15 +13,10 @@ export class PartyComponent implements OnInit {
   constructor(public partyService: PartyService) { }
 
   ngOnInit(): void {
-    this.getPartys();
-
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.modal');
-      var instances = M.Modal.init(elems);
-    });
-    
+   // this.getPartys();
+    this.partyService.getPartys();
   }
-  getPartys(){
+  /*getPartys(){
     this.partyService.getPartys().subscribe(
       res=> {
         this.partyService.partys=res;
@@ -31,7 +26,7 @@ export class PartyComponent implements OnInit {
         console.log(err);
       }
     )
-  }
+  }*/
   
 
 }

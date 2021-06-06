@@ -34,7 +34,7 @@ import { PartyComponent } from './Components/party/party.component';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [PartyService],
+  providers: [PartyComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
