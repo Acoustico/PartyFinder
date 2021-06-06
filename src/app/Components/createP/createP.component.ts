@@ -11,7 +11,7 @@ import { Party } from '../../Model/party';
 })
 export class createPComponent implements OnInit {
   Party:CParty={}
-  party:Party={title: new String,
+  party:Party={ title: new String,
     language: new String,
     game: new String,
     info: new String }

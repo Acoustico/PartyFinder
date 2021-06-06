@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import * as M from 'materialize-css';
+
 
 @Component({
   selector: 'app-party',
@@ -10,6 +12,10 @@ export class PartyComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
+    });
   }
 
 }

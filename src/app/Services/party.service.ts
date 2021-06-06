@@ -23,7 +23,6 @@ export class PartyService{
     addToMongo(party:Party): Observable<Party>{
       //this.party?.push(party);
       console.log(party);
-      
       return this.http.post<Party>(this.API_URL, party);
       
     }
