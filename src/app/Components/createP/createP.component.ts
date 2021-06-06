@@ -10,8 +10,9 @@ import { Party } from '../../Model/party';
   styleUrls: ['./createP.component.css']
 })
 export class createPComponent implements OnInit {
-  @Input() data:any;
+  @Input() Party:any;
   constructor(public partyService: PartyService) {
+   
     
    }
 
@@ -19,7 +20,7 @@ export class createPComponent implements OnInit {
     this.partyService.getPartys();
   }
   addParty(){
-    this.partyService.addToMongo(this.data)
+    this.partyService.addToMongo(this.Party)
   }
   
 
