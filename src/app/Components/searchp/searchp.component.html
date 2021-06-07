@@ -1,41 +1,14 @@
 <body class="bg" bgcolor="#2E5C81">
-    <div class="row black ">
+    <div class="row black">
         <form class="col s20" #searchForm="ngForm" (ngSubmit)="searchbox(searchForm)">
             <div class="row offset-s1">
                 <div class="col s2">
                     <app-side-nav></app-side-nav>
                 </div>
-                <!--<div class="col s8 offset-s1">
-                    <div class="input-field col s3 offset-s1">
-                        <input id="icon_prefix2" style="color: white;" type="text" class="validate" name="sName" [(ngModel)]="sName">
-                        <label for="icon_prefix2">Name</label>
-                        <i class="material-icons prefix">search</i>
-                    </div>
-                    <div class="input-field col s3 offset-s1">
-                        <input id="icon_prefix2" style="color:white;" type="text" class="validate" name="sGame" [(ngModel)]="sGame">
-                        <label for="icon_prefix2">Game</label>
-                        <button type="submit" ><i class="material-icons prefix">search</i></button>
-                    </div>
-                </div>-->
             </div>
         </form>
     </div>
-    <div class="input-field2 row s12">
-        <div class="col s1">
-            <select>
-                <option value="" disabled selected>Name</option>
-                <option value="1">A-Z</option>
-                <option value="2">z-A</option>
-            </select>
-        </div>
-        <div class="col s1">
-            <select>
-                <option value="" disabled selected>Language</option>
-                <option value="1">EN</option>
-                <option value="2">ES</option>
-            </select>
-        </div>
-    </div>
+  
 
     <app-party *ngFor="let party of partyService.partys" [data]="party"></app-party>
     <app-party *ngFor="let party of partyService.getPartys()" [data]="party"></app-party>
