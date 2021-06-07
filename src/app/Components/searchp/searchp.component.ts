@@ -16,7 +16,7 @@ export class SearchpComponent implements OnInit {
 
   ngOnInit(): void {
     //console.log(this.partyService.getPartys());
-    this.getPartys();
+    //this.getPartys();
 
   }
 
@@ -24,7 +24,7 @@ export class SearchpComponent implements OnInit {
     console.log(form.value);
   }
 
-  getPartys(){
+  /*getPartys(){
     this.partyService.getPartys()
     /*.subscribe(
       (      res: Party[] | undefined) =>{
@@ -35,5 +35,5 @@ export class SearchpComponent implements OnInit {
         console.log(err);
       }
     )*/
-  }
+  
 }

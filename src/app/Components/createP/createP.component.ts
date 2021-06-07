@@ -21,12 +21,10 @@ export class createPComponent implements OnInit {
   }
 
   addParty(title:string,game:string,language:string,info:string){
-    const contenido: string[]=[];
     this.party.title=title;
     this.party.game=game;
     this.party.language=language;
     this.party.info=info;
-    console.log(this.party);
     this.partyService.addParty(this.party);
   }
   
